@@ -1,145 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Gaming | Next Level Gaming Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Gaming | Next Level Gaming Hub</title>
 
-    <style>
-        /* ===== GLOBAL ===== */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: white;
-            overflow-x: hidden;
-        }
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-        /* ===== NAVBAR ===== */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(20,20,20,0.9);
-            position: sticky;
-            top: 0;
-            backdrop-filter: blur(10px);
-        }
+/* ===== NAVBAR ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(20,20,20,0.9);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ffcc;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-        nav a:hover {
-            color: #00ffcc;
-        }
+nav a:hover {
+    color: #00ffcc;
+}
 
-        /* ===== HERO SECTION ===== */
-        .hero {
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle, #111, #000);
-        }
+/* ===== HERO ===== */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #111, #000);
+}
 
-        .hero h1 {
-            font-size: 60px;
-            color: #00ffcc;
-            margin: 0;
-            animation: glow 2s infinite alternate;
-        }
+.hero h1 {
+    font-size: 60px;
+    color: #00ffcc;
+    animation: glow 2s infinite alternate;
+}
 
-        .hero p {
-            font-size: 18px;
-            color: #ccc;
-            margin-top: 10px;
-        }
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
 
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #00ffcc; }
-            to { text-shadow: 0 0 25px #00ffcc; }
-        }
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00ffcc; }
+    to { text-shadow: 0 0 25px #00ffcc; }
+}
 
-        /* ===== BUTTON ===== */
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #00ffcc;
-            border: none;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
+/* ===== BUTTON ===== */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00ffcc;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
-        .btn:hover {
-            transform: scale(1.1);
-            background: #00ffaa;
-        }
+.btn:hover {
+    transform: scale(1.1);
+    background: #00ffaa;
+}
 
-        /* ===== SECTIONS ===== */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        .card-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+/* ===== CARDS ===== */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        .card {
-            background: #1a1a1a;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-        .card:hover {
-            transform: translateY(-10px);
-            background: #222;
-        }
+.card:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
 
-        .card h3 {
-            color: #00ffcc;
-        }
+.card h3 {
+    color: #00ffcc;
+}
 
-        /* ===== FOOTER ===== */
-        footer {
-            background: #111;
-            text-align: center;
-            padding: 20px;
-            color: #888;
-        }
+/* ===== MARKETPLACE PREVIEW ===== */
+.market {
+    background: #111;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
 
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            header {
-                flex-direction: column;
-            }
-        }
-    </style>
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+</style>
 </head>
 
 <body>
@@ -165,7 +165,7 @@
 <!-- ===== ABOUT ===== -->
 <section id="about">
     <h2>About Us</h2>
-    <p>Alpha Gaming is a modern gaming hub built for gamers who want next-level experience, competition, and community.</p>
+    <p>Alpha Gaming is a next-level gaming hub where players connect, compete, and grow.</p>
 </section>
 
 <!-- ===== GAMES ===== -->
@@ -175,25 +175,30 @@
     <div class="card-container">
         <div class="card">
             <h3>🎮 FPS Battles</h3>
-            <p>High-action shooting games and tournaments.</p>
+            <p>High-action shooting tournaments.</p>
         </div>
 
         <div class="card">
             <h3>🏎 Racing Zone</h3>
-            <p>Fast and furious racing competitions.</p>
+            <p>Speed racing competitions.</p>
         </div>
 
         <div class="card">
             <h3>⚔ Survival Arena</h3>
-            <p>Fight, survive, and become the champion.</p>
+            <p>Fight and become champion.</p>
         </div>
+    </div>
+
+    <div class="market">
+        <h3>🔥 Gaming Marketplace (Coming Soon)</h3>
+        <p>Buy coaching, training, and gaming services safely</p>
     </div>
 </section>
 
-<!-- ===== JOIN SECTION ===== -->
+<!-- ===== JOIN ===== -->
 <section id="join">
     <h2>Join Alpha Gaming</h2>
-    <p>Be part of our elite gaming community today.</p>
+    <p>Become part of the fastest growing gaming community.</p>
     <button class="btn" onclick="joinNow()">Get Started</button>
 </section>
 
@@ -202,11 +207,11 @@
     © 2026 Alpha Gaming | Built for next-level gamers
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
+<!-- ===== JS ===== -->
 <script>
-    function joinNow() {
-        alert("🔥 Welcome to Alpha Gaming! Registration coming soon.");
-    }
+function joinNow() {
+    alert("🔥 Welcome to Alpha Gaming! Platform launching soon.");
+}
 </script>
 
 </body>
