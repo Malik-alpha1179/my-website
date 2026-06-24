@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Website</title>
-<head>
-<style>
-.dark { background:black; color:white; }
-</style>
-</head>
+
     <style>
+        /* ===== BASIC DESIGN ===== */
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background: #f2f6ff;
             text-align: center;
             padding: 50px;
+            transition: 0.3s;
+            margin: 0;
         }
 
         h1 {
@@ -23,6 +23,7 @@
             font-size: 18px;
         }
 
+        /* ===== BUTTONS ===== */
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -31,21 +32,89 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            margin: 8px;
+            transition: 0.3s;
         }
 
         button:hover {
             background: #1a4dcc;
+            transform: scale(1.05);
+        }
+
+        /* ===== LINKS ===== */
+        a {
+            text-decoration: none;
+            color: #2b6fff;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== DARK MODE ===== */
+        .dark {
+            background: #111;
+            color: white;
+        }
+
+        .dark a {
+            color: #66aaff;
+        }
+
+        /* ===== CARD BOX ===== */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .dark .card {
+            background: #222;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>My First Website</h1>
-    <p>This is my improved website with design.</p>
+    <h1>🚀 My First Website</h1>
 
-    <button Click Me</button>
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+    <div class="card">
+        <p id="text">This is my improved website with interactivity.</p>
+
+        <!-- Buttons -->
+        <button onclick="changeText()">Click Me</button>
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+        <button onclick="resetText()">Reset Text</button>
+    </div>
+
+    <br><br>
+
+    <!-- Navigation -->
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a>
+
+    <!-- JavaScript -->
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML =
+                "🎉 You clicked the button! Website is now interactive.";
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark");
+        }
+
+        function resetText() {
+            document.getElementById("text").innerHTML =
+                "This is my improved website with interactivity.";
+        }
+    </script>
+
 </body>
 </html>
