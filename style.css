@@ -102,3 +102,12 @@ footer {
     color: #888;
     margin-top: 40px;
 }
+
+/* FIX: text selection behavior */
+body {
+    user-select: none;
+}
+
+input, textarea {
+    user-select: text;
+}
