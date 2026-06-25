@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Leaderboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard - Alpha Gaming</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+.page-title {
+    font-size: 48px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+    margin-top: 40px;
+}
+
+.sub-text {
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+.rank {
+    font-size: 20px;
+    font-weight: bold;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
     <div>⚡ ALPHA GAMING</div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -22,16 +45,39 @@
 </header>
 
 <section>
-    <h1>Top Players</h1>
+
+    <h1 class="page-title">TOP PLAYERS</h1>
+    <p class="sub-text">Best performers in Alpha Gaming</p>
 
     <div class="card-container">
-        <div class="card"><h3>#1 AlphaKing</h3><p>5500</p></div>
-        <div class="card"><h3>#2 ShadowX</h3><p>5100</p></div>
-        <div class="card"><h3>#3 NightHunter</h3><p>4900</p></div>
+
+        <div class="card">
+            <div class="rank">🥇 #1 AlphaKing</div>
+            <p>5500 Points</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">🥈 #2 ShadowX</div>
+            <p>5100 Points</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">🥉 #3 NightHunter</div>
+            <p>4900 Points</p>
+        </div>
+
+        <div class="card">
+            <div class="rank">🔥 Rising Star</div>
+            <p>4500 Points</p>
+        </div>
+
     </div>
+
 </section>
 
-<footer>© 2026 Alpha Gaming</footer>
+<footer>
+    © 2026 Alpha Gaming
+</footer>
 
 </body>
 </html>
