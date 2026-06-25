@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Alpha Gaming</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== CONTACT PAGE PREMIUM STYLE ===== */
+
+.contact-wrapper {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-title {
+    font-size: 48px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    color: #b0b0b0;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.contact-card {
+    background: #112240;
+    padding: 35px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 25px rgba(0,255,204,0.08);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(0,255,204,0.25);
+}
+
+.contact-item {
+    margin: 20px 0;
+}
+
+.contact-item h3 {
+    color: #00ffcc;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.contact-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #00ffcc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #00ffaa;
+    transform: scale(1.05);
+}
+</style>
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header>
     <div>⚡ ALPHA GAMING</div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -21,12 +98,39 @@
     </nav>
 </header>
 
-<section>
-    <h1>Contact Us</h1>
-    <p>Email:malikalphagaming@gmail.com</p>
-</section>
+<!-- CONTACT CONTENT -->
+<div class="contact-wrapper">
 
-<footer>© 2026 Alpha Gaming</footer>
+    <h1 class="contact-title">CONTACT US</h1>
+    <p class="contact-subtitle">We’re always here for gamers ⚡</p>
+
+    <div class="contact-card">
+
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p>malikalphagaming@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Support</h3>
+            <p>24/7 Gaming Help Desk</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Community</h3>
+            <p>Discord & Events Coming Soon</p>
+        </div>
+
+        <button class="contact-btn">Send Message</button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Alpha Gaming
+</footer>
 
 </body>
 </html>
