@@ -1,8 +1,6 @@
-/*==============================
-      ALPHA GAMING STYLE.CSS
-==============================*/
+/* ===== ALPHA GAMING - MODERN STYLE ===== */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
     margin:0;
@@ -16,467 +14,173 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
+    background:#0b0f19;
     color:#fff;
-    overflow-x:hidden;
-    user-select:none;
-    min-height:100vh;
-
-    background:
-    radial-gradient(circle at top left,#00f7ff33 0%,transparent 30%),
-    radial-gradient(circle at bottom right,#8f00ff44 0%,transparent 35%),
-    linear-gradient(135deg,#020617,#081020,#050814,#000000);
+    line-height:1.6;
 }
 
-/* Animated Grid */
-
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-
-    background-image:
-    linear-gradient(rgba(0,255,255,.06) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(0,255,255,.06) 1px,transparent 1px);
-
-    background-size:45px 45px;
-
-    animation:grid 25s linear infinite;
-
-    z-index:-2;
-}
-
-/* Glowing Background */
-
-body::after{
-
-    content:"";
-
-    position:fixed;
-
-    inset:0;
-
-    background:
-
-    radial-gradient(circle at 15% 20%,rgba(0,255,255,.15),transparent 18%),
-
-    radial-gradient(circle at 85% 80%,rgba(149,0,255,.18),transparent 20%),
-
-    radial-gradient(circle at 60% 30%,rgba(0,120,255,.12),transparent 18%);
-
-    filter:blur(60px);
-
-    z-index:-3;
-}
-
-@keyframes grid{
-
-    from{
-        transform:translateY(0);
-    }
-
-    to{
-        transform:translateY(45px);
-    }
-
-}
-
-/*=========================
-        HEADER
-==========================*/
+/* Header */
 
 header{
-
     position:sticky;
     top:0;
-    z-index:999;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:20px 60px;
-
-    background:rgba(255,255,255,.06);
-
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-    box-shadow:0 5px 30px rgba(0,0,0,.4);
+    padding:18px 8%;
+    background:#111827;
+    border-bottom:1px solid #222;
+    z-index:100;
 }
 
 header div{
-
     font-family:'Orbitron',sans-serif;
-
     font-size:28px;
-
-    font-weight:800;
-
-    letter-spacing:2px;
-
-    color:#00eaff;
-
-    text-shadow:
-
-    0 0 10px cyan,
-
-    0 0 20px cyan;
-
+    color:#8b5cf6;
 }
-
-/*=========================
-        NAVBAR
-==========================*/
 
 nav{
     display:flex;
-    gap:28px;
+    gap:25px;
 }
 
 nav a{
-
-    color:white;
-
+    color:#ddd;
     text-decoration:none;
-
-    font-weight:500;
-
-    position:relative;
-
     transition:.3s;
 }
 
 nav a:hover{
-
-    color:#00eaff;
-
-    text-shadow:0 0 10px cyan;
-
+    color:#8b5cf6;
 }
 
-nav a::after{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:-6px;
-
-    left:0;
-
-    width:0;
-
-    height:2px;
-
-    background:#00eaff;
-
-    transition:.3s;
-
-}
-
-nav a:hover::after{
-
-    width:100%;
-
-}
-
-/*=========================
-        HERO
-==========================*/
+/* Hero */
 
 .hero{
-
+    min-height:85vh;
     display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     flex-direction:column;
-
+    justify-content:center;
+    align-items:center;
     text-align:center;
-
-    min-height:82vh;
-
     padding:20px;
-
 }
 
 .hero h1{
-
     font-family:'Orbitron',sans-serif;
-
-    font-size:72px;
-
-    line-height:1.2;
-
-    letter-spacing:4px;
-
-    text-shadow:
-
-    0 0 15px cyan,
-
-    0 0 35px #00c3ff,
-
-    0 0 60px #005eff;
-
-    animation:fadeUp 1s;
-
+    font-size:60px;
 }
 
 .hero p{
-
-    margin-top:25px;
-
-    font-size:22px;
-
-    color:#d8d8d8;
-
-    max-width:750px;
-
-    line-height:1.8;
-
-    animation:fadeUp 1.3s;
-
+    max-width:650px;
+    color:#bbb;
+    margin:20px 0;
 }
 
-/*=========================
-        BUTTON
-==========================*/
+/* Button */
 
 .btn{
-
-    margin-top:40px;
-
-    padding:16px 45px;
-
-    border:none;
-
-    border-radius:50px;
-
-    cursor:pointer;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    color:white;
-
-    background:
-
-    linear-gradient(45deg,#00d4ff,#7d2cff);
-
-    box-shadow:
-
-    0 0 20px cyan,
-
-    0 0 45px #7d2cff;
-
-    transition:.35s;
-
+    display:inline-block;
+    padding:14px 35px;
+    background:#8b5cf6;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    transition:.3s;
 }
 
 .btn:hover{
-
-    transform:translateY(-5px) scale(1.05);
-
-    box-shadow:
-
-    0 0 35px cyan,
-
-    0 0 80px #7d2cff;
-
+    background:#6d28d9;
+    transform:translateY(-3px);
 }
 
-/*=========================
-        SECTION
-==========================*/
+/* Sections */
 
 section{
-
-    padding:80px 20px;
-
+    padding:70px 8%;
 }
 
-/*=========================
-         CARDS
-==========================*/
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-family:'Orbitron',sans-serif;
+}
+
+/* Cards */
 
 .card-container{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
-
-    width:280px;
-
-    padding:30px;
-
-    text-align:center;
-
-    border-radius:20px;
-
-    background:rgba(255,255,255,.05);
-
-    backdrop-filter:blur(15px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.4s;
-
+    background:#151c2d;
+    padding:25px;
+    border-radius:16px;
+    transition:.3s;
+    border:1px solid #242b3d;
 }
 
 .card:hover{
-
-    transform:translateY(-12px);
-
-    box-shadow:
-
-    0 0 30px rgba(0,255,255,.35);
-
+    transform:translateY(-8px);
+    border-color:#8b5cf6;
 }
 
 .card h3{
-
-    margin-bottom:15px;
-
-    color:#00eaff;
-
+    color:#8b5cf6;
+    margin-bottom:10px;
 }
 
-.card p{
-
-    color:#d7d7d7;
-
-}
-
-/*=========================
-       FORM
-==========================*/
+/* Form */
 
 input,
 textarea{
-
     width:100%;
-
     padding:14px;
-
     margin:10px 0;
-
-    background:#101a32;
-
-    border:none;
-
+    background:#1b2438;
+    border:1px solid #333;
+    color:#fff;
     border-radius:10px;
-
-    color:white;
-
-    user-select:text;
-
 }
 
 input:focus,
 textarea:focus{
-
     outline:none;
-
-    box-shadow:0 0 12px cyan;
-
+    border-color:#8b5cf6;
 }
 
-/*=========================
-        FOOTER
-==========================*/
+/* Footer */
 
 footer{
-
     text-align:center;
-
-    padding:25px;
-
-    color:#bbbbbb;
-
-    background:rgba(255,255,255,.04);
-
-    border-top:1px solid rgba(255,255,255,.06);
-
+    padding:20px;
+    background:#111827;
+    color:#aaa;
+    margin-top:40px;
 }
 
-/*=========================
-      ANIMATION
-==========================*/
+/* Responsive */
 
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(60px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-/*=========================
-      RESPONSIVE
-==========================*/
-
-@media(max-width:900px){
+@media(max-width:768px){
 
 header{
-
     flex-direction:column;
-
-    gap:20px;
-
-    padding:20px;
-
+    gap:15px;
 }
 
 nav{
-
     flex-wrap:wrap;
-
     justify-content:center;
-
-    gap:15px;
-
 }
 
 .hero h1{
-
-    font-size:42px;
-
+    font-size:40px;
 }
 
 .hero p{
-
-    font-size:18px;
-
-}
-
-.card{
-
-    width:90%;
-
+    font-size:16px;
 }
 
 }
